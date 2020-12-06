@@ -1,0 +1,26 @@
+.radio {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin: 20px 20px 0 0;
+  font-weight: 300;
+  color: #8ad8f4;
+  
+  input {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  &Button {
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #8ad8f4;
+  }
+  
+  input:checked + &Button {
+    background-color: #8ad8f4;
+    box-shadow: inset 0 0 0 2px white;
+  }
+}

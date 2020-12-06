@@ -1,0 +1,99 @@
+@keyframes appear{ 
+  0%{
+    opacity: 0;
+    top: 50px;
+  }
+  100%{
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+.wrapper{
+  position: relative;
+  min-height: 300px;
+  width: 35vw;
+  margin: 40px 40px;
+  box-shadow: 0 20px 40px -5px rgba(#8ad8f4, .3);
+  animation: appear .3s ease;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.title{
+  padding: 20px 5px 10px 10px;
+  font-size: 30px;
+  background-color: #8ad8f4;
+  border-radius: 20px 20px 0 0;
+}
+
+.type{
+  padding-left: 25px;
+  font-size: 10px;
+  background-color: #8ad8f4;
+  font-weight: 300;
+}
+
+.time{
+  padding-left: 25px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.description{
+  display: block;
+  padding: 0 20px 20px 20px;
+  font-size: 16px;
+}
+
+.change{
+  position: absolute;
+  transform: translateX(-100%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(180, 180, 180, 0.5);
+  border-radius: 20px;
+  transition: .2s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.change button {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  border: 1px solid #8ad8f4;
+  color: #8ad8f4;
+  border-radius: 10px;
+  background-color: white;
+  outline: none;
+  transition: .2s;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.change button:hover{
+color: black;
+border: 1px solid black;
+}
+
+.wrapper:hover .change{
+  transform: translateX(0);
+}
+
+.done{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(180, 180, 180, 0.5);
+  border-radius: 20px;
+  transition: .2s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  animation: appear .7s ease;
+  z-index: 1;
+}

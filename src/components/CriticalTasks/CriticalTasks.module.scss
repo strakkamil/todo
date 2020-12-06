@@ -1,0 +1,13 @@
+.wrapper{
+  margin-left: 150px;
+}
+
+.tasks{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.heading{
+  padding: 20px 20px;
+  font-size: 30px;
+}

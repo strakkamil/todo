@@ -1,0 +1,45 @@
+@keyframes appear{ 
+  0%{
+    opacity: 0;
+    top: 0;
+  }
+  100%{
+    opacity: 1;
+    top: 50%;
+  }
+}
+
+.wrapper{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70vh;
+  width: 40vw;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px -5px rgba(#8ad8f4, .3);
+  animation: appear .3s ease;
+}
+
+.heading{
+  margin-top: 60px;
+  font-size: 24px;
+}
+
+.close{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid #8ad8f4;
+  color: #8ad8f4;
+  font-size: 20px;
+  outline: none;
+  border-radius: 5px;
+  top: 20px;
+  right: 20px;
+}

@@ -1,0 +1,52 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.form input {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #8ad8f4;
+  outline: none;
+  color:#8ad8f4;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.form input::placeholder{
+  color: #8ad8f4;
+}
+
+.form textarea{
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #8ad8f4;
+  outline: none;
+  color:#8ad8f4;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.form textarea::placeholder{
+  color: #8ad8f4;
+}
+
+.form button {
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  border: 1px solid #8ad8f4;
+  color: #8ad8f4;
+  border-radius: 10px;
+  background-color: white;
+  outline: none;
+  transition: .2s;
+}
+
+.form button:hover{
+color: black;
+border: 1px solid black;
+}
